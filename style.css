@@ -1,0 +1,277 @@
+/* === Global Styles === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
+  color: #3B3B3B;
+  background-color: #FFF0F5;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  color: #8B5E83;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+/* === Video Background === */
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.08;
+}
+
+/* === Navbar === */
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #E6B8D6;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #C71585;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #3B3B3B;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #C71585;
+}
+
+/* === Header === */
+.header {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.profile-pic img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #C71585;
+  margin-bottom: 20px;
+}
+
+.header-info h1 {
+  font-size: 2.5rem;
+}
+
+.header-info h2 {
+  color: #C71585;
+  font-size: 1.4rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: #7A7A7A;
+}
+
+/* === Skills Grid === */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skills-grid > div {
+  flex: 1;
+  min-width: 250px;
+  background: #FFE4EC;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #F2C0D8;
+}
+
+.skills-grid ul {
+  list-style: disc inside;
+  color: #555;
+}
+
+/* === Education === */
+.edu-date {
+  font-style: italic;
+  color: #C71585;
+}
+
+/* === Projects === */
+.projects-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.project-card {
+  background: #FFF5FA;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #E6B8D6;
+}
+
+/* === Contact Section === */
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #DAA0C0;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.send-btn {
+  background: #C71585;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background: #A31472;
+}
+
+.contact-direct-panel {
+  flex: 1;
+  min-width: 200px;
+}
+
+.direct-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.direct-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #3B3B3B;
+  text-decoration: none;
+}
+
+.direct-link img {
+  width: 20px;
+  height: 20px;
+}
+
+/* === Footer === */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #FDE6F2;
+  font-size: 0.9rem;
+  color: #7A7A7A;
+}
+
+.footer a {
+  color: #C71585;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* === Buttons and Links === */
+a {
+  color: #C71585;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #A31472;
+}
+
+button {
+  font-family: 'Lora', serif;
+  background: #C71585;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #A31472;
+}
+
+/* === Media Queries === */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
